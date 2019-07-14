@@ -1,0 +1,59 @@
+.upload {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: flex-start;
+  text-align: left;
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 16px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.files {
+  margin-left: 32px;
+  align-items: flex-start;
+  justify-items: flex-start;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.title {
+  margin-bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.filename {
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #555;
+}
+
+.file-row {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 8px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.checkIcon {
+  opacity: 0.5;
+  margin-left: 32px;
+}
+
+.progressWrapper {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+}
