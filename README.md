@@ -21,13 +21,13 @@ This is a demo application which marks locations on Google Map and helps us to s
     ```
     cd path/to/location-finder-demo/frontend/assets/src
     ```
-    you will find a file named *config.js* in which you need to provide your clientId (for Google), appId (for Facebook) for OAuth Login.
+    you will find a file named *config.js* in which you need to provide your clientId (for Google), appId (for Facebook) for OAuth Login   and also provide google maps API.
 4. Build our Frontend file, run
     ```
     npm run build-prod (For Production)
     npm run build-dev (For Development)
     ```
-4. Once everything is setted up, run
+4. Once everything is setted up (make sure mongodb is running), run
     ```
     npm start
     ```
