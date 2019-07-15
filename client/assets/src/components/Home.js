@@ -5,6 +5,7 @@ import Map from './Map';
 import UploadControl from './UploadControl';
 import { getLocations, searchLocation } from '../services';
 import { resetLocations } from '../actions';
+import config from '../config';
 
 class Home extends Component {
   constructor(props) {
@@ -111,7 +112,7 @@ class Home extends Component {
           </div>
           <div className='col-lg-1 col-md-2'>
             {(!selected || !selected.name) && <button type='button' className='btn btn-block btn-sm btn-outline-primary' onClick={this.searchLocations}>Search</button>}
-            {selected && selected.name && <button type='button' className='btn btn-block btn-outline-info' onClick={this.clearSearch}>Clear</button>}
+            {selected && selected.name && <button type='button' className='btn btn-block btn-sm btn-outline-primary' onClick={this.clearSearch}>Clear</button>}
           </div>
           <div className='col-lg-2 col-md-3'>
             <button type='button' className='btn btn-block btn-sm btn-outline-primary' data-toggle='modal' data-target='#uploadForm'>Upload CSV</button>
@@ -121,7 +122,7 @@ class Home extends Component {
           center={this.getCenter(locations[0])}
           zoom={12}
           places={locations}
-          googleMapURL='https://maps.googleapis.com/maps/api/js?key=AIzaSyAhqblTwcQ26HsmofQ9maFmz9vpSDMv3uY'
+          googleMapURL={'https://maps.googleapis.com/maps/api/js?key=' + config.google.mapsAPIKey}
           loadingElement={<div style={{ height: '100%' }} />}
           containerElement={<div style={{ height: '450px' }} />}
           mapElement={<div style={{ height: '100%' }} />}

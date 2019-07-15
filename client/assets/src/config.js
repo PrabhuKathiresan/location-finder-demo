@@ -1,8 +1,9 @@
 export default {
   facebook: {
-    appId: 'number' // replace with your facebook client id
+    appId: 'appId' // replace with your facebook client id
   },
   google: {
-    clientId: 'number' // replace with your google client id
+    clientId: 'clientId', // replace with your google client id
+    mapsAPIKey: 'mapsAPIKey' // replace with google maps api key
   }
 }
